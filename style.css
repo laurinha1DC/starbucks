@@ -1,0 +1,234 @@
+/* MENU */
+
+/* Importando fonte Poppins do Google fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ____________________________________________________________________ */
+/* Reset (Básico) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fff; */
+    background-color: #fff;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px; /* O padding de 100px que determina o respiro lateral */
+    display: flex; /* Flexbox para organizar o Header */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+header .logo:hover {
+    filter: invert(0.1);
+}
+
+header ul {
+    position: relative;
+    display: flex; /* Põe os links em linha (Menu) */
+}
+
+header ul li {
+    list-style: none; /* Remove o estilo da lista (bolinha) */
+}
+
+header ul li a {
+    display: inline-block; /* Garante que o elemento seja renderizado em linha dentro do bloco */
+    /* color: #333; */
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 40px; /* Espaça os links entre si */
+    text-decoration: none; /* Remove o underline */
+    padding: 5px;
+}
+header ul li a:hover {
+    /* background-color: #017143; */
+    background-color: #017143;
+    /* color: #fff; */
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+/* CONTEUDO*/
+
+.conteudo {
+    position: relative;
+    width: 100%;
+    display: flex; /* Torna flexível o container do texto (.conteudo) */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo .textoPrincipal {
+    position: relative;
+    max-width: 600px; /* Limita a área do texto principal */
+
+}
+
+.conteudo .textoPrincipal h2 {
+    /* color: #333; */
+    color: #333;
+    font-size: 2.5em; /* 1em = 1vez tamanho da fonte do elemento (16px * 2.5) = 40px */
+    line-height: 1.5em; /* Espaçamento vertical fonte (40px * 1.5) = 60px */
+    font-weight: 500;
+
+}
+
+/* Destaque da palavra Starbucks */
+.conteudo .textoPrincipal h2 span {
+    /* color: #017143; */
+    color:  #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.conteudo .textoPrincipal p {
+    /* color: #333; */
+    color: #333;
+
+}
+
+/* Botão */
+.conteudo .textoPrincipal a {
+    display: inline-block;
+    margin-top: 20px; /* Afastamento do parágrafo acima */
+    padding: 8px 20px;
+    /* background: #017143; */
+    background: #017143;
+    /* color: #fff; */
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    text-decoration: none;
+
+}
+.conteudo .textoPrincipal a:hover {
+    /* background: #333; */
+    background: #333;
+    /* color: #fff; */
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    text-decoration: none;
+
+}
+
+/* IMAGENS  */
+
+/* Imagem sorvete */
+.conteudo .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+
+}
+
+.conteudo .imgBox img {
+    max-width: 340px;
+}
+
+/* Imagem dos sorvetes pequenos abaixo */
+.sorvetes {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.sorvetes li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sorvetes li:hover {
+    transform: translateY(-15px);
+
+}
+
+.sorvetes li img {
+    max-width: 60px;
+
+}
+
+/* Imagem das redes sociais */
+
+.sociais {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.sociais li {
+    list-style: none;
+
+}
+
+.sociais li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6); /* Reduz o tamanho dos ícones */
+    filter: invert(1); /* Inverte a cor para branco */
+
+}
+.sociais li a:hover {
+    /* color: #333; */
+    color: #333;
+    filter: invert(0);
+
+}
+
+
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #017143; */
+    background:  #017143;
+
+
+       /* Tamanho -> Lado -> posição */
+    clip-path: circle(600px at right 800px);
+    }
